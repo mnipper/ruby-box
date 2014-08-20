@@ -31,6 +31,11 @@ module RubyBox
       file.reload_meta
     end
 
+    def task_by_id(id)
+      task = Task.new(@session, {'id' => id})
+      task.reload_meta
+    end
+
     def file(path)
       path = split_path( path.sub(/^\.\//, '') )
       file_name = path.pop

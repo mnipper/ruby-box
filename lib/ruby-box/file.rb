@@ -2,6 +2,7 @@ module RubyBox
   class File < Item
 
     has_many :comments
+    has_many :tasks
 
     def download
       resp = stream.read
