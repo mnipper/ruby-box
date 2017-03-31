@@ -1,7 +1,7 @@
 source "http://rubygems.org"
 
 gem "multipart-post"
-gem "oauth2"
+gem "oauth2", "= 0.9.3"
 gem "json"
 gem "addressable"
 
